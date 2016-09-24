@@ -5,6 +5,8 @@
  */
 angular.service('myAngularApp', function($route, $location, $window) {
 
+  debugger
+
   $route.when('/main', {template: 'partials/main.html', controller: App.Controllers.TodoController});
   $route.when('/credits', {template: 'partials/credits.html'});
   $route.otherwise({redirectTo: '/main'});

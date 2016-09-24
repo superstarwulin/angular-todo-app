@@ -2,7 +2,7 @@
 
 App.Controllers.TodoController = function () {
     var self = this;
-
+    debugger
     self.todos = [];
 
     self.newTodo = "";

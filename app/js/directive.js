@@ -1,5 +1,6 @@
 angular.directive('my:mouseenter', function(expression, compiledElement) {
     var compiler = this;
+    debugger
     return function(linkElement) {
         var scope = this;
         linkElement.bind('mouseenter', function(event) {
@@ -14,6 +15,7 @@ angular.directive('my:mouseleave', function(expression, compiledElement) {
     var compiler = this;
     return function(linkElement) {
         var scope = this;
+        debugger
         linkElement.bind('mouseleave', function(event) {
             scope.$tryEval(expression, linkElement);
             scope.$service('$updateView')();
@@ -24,6 +26,7 @@ angular.directive('my:mouseleave', function(expression, compiledElement) {
 
 angular.directive('my:blur', function(expression, compiledElement) {
     var compiler = this;
+    debugger
     return function(linkElement) {
         var scope = this;
         linkElement.bind('blur', function(event) {
